@@ -5,7 +5,7 @@ const concatObj = new concatController();
 
 const routes = express.Router();
 
-routes.post('/cadastro',concatObj.addContactMacapa);
+routes.post('/cadastro',concatObj.addContactVarejao);
 
 
 module.exports=routes;

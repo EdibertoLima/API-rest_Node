@@ -1,15 +1,15 @@
 exports.macapa={
-    dialect: 'mysql',
-    host:'localhost',
+    dialect:'mysql',
+    host:'database1',
     username:"root",
-    password:"",
+    password:"admin",
     database:"macapa"
 }
 
 exports.varejao={
-    dialect: 'postgres',
-    host:'localhost',
-    username:"root",
-    password:"",
+    dialect:'postgres',
+    host:'database2',
+    username:"admin",
+    password:"admin",
     database:"varejao"
 }
