@@ -3,6 +3,7 @@ const {ContactMacapa,ContactVarejao} = require ("../models/contact")
 module.exports= {
     async addContactMacapa(req,res){
         const resp=req.body; 
+        //mascara
         await ContactMacapa.bulkCreate(resp.contacts, { individualHooks: true });
         return res.json({mensagem:"contatos adicionados"});
     },

@@ -1,0 +1,19 @@
+{
+    "env": 
+        {
+            "MYSQL_USER": "root",
+            "MYSQL_PASSWORD":"admin",
+            "MYSQL_DATABASE":"macapa",
+            "MYSQL_HOST": "database1",
+            "MYSQL_PORT": 3306,
+            "JWT_KEY_macapa": "key_teste",
+       
+            "POSTGRES_USER":"admin",
+            "POSTGRES_PASSWORD":"admin",
+            "POSTGRES_DATABASE":"varejao",
+            "POSTGRES_HOST":"database2",
+            "POSTGRES_PORT": 5432,
+            "JWT_KEY_varejao":"key_teste2"
+        }
+    
+}
