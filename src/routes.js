@@ -1,11 +1,22 @@
 const express = require('express');
 
 const concatController = require("./Controllers/ContactController");
-const concatObj = new concatController();
+const createTable = require("./Controllers/CreateTablesController");
+const login = require("./Controllers/LoginController");
+
+const auth = require('./midleware/authorization');
 
 const routes = express.Router();
 
-routes.post('/cadastro',concatObj.addContactVarejao);
+//adicionar contato
+routes.post('/addcadastrovarejao',auth.varejao,concatController.addContactVarejao);
+routes.post('/addcadastromacapa',auth.macapa,concatController.addContactMacapa);
+
+
+routes.post('/loginvarejao',createTable.createTableVarejao,login.loginvarejao);
+routes.post('/loginmacapa',createTable.createTableMacapa,login.loginmacapa);
+
+
 
 
 module.exports=routes;
