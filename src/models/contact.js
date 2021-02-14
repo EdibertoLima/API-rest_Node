@@ -3,8 +3,8 @@ const { Model, DataTypes } = require("sequelize");
 class ContactMacapa extends Model {
     static init(sequelize) {
         super.init({
-            name: DataTypes.STRING(200),
-            cellphone: DataTypes.STRING(20),
+            name: {type:DataTypes.STRING(200),allowNull: false},
+            cellphone:{type: DataTypes.STRING(20),allowNull: false},
         }, {
             sequelize,
             modelName: 'contacts',
@@ -18,8 +18,8 @@ class ContactMacapa extends Model {
 class ContactVarejao extends Model {
     static init(sequelize) {
         super.init({
-            name: DataTypes.STRING(100),
-            cellphone: DataTypes.STRING(13),
+            name: {type:DataTypes.STRING(100),allowNull: false},
+            cellphone:{type: DataTypes.STRING(13),allowNull: false},
         }, {
             sequelize,
             modelName: 'contacts',

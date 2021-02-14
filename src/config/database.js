@@ -8,8 +8,9 @@ exports.macapa={
 
 exports.varejao={
     dialect:'postgres',
-    host:process.env.POSTGRES_HOST,
-    username:process.env.POSTGRES_USER,
-    password:process.env.POSTGRES_PASSWORD,
-    database:process.env.POSTGRES_HOST
+    host: process.env.POSTGRES_HOST,
+    username: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DATABASE
 }
+

@@ -15,5 +15,6 @@
             "POSTGRES_PORT": 5432,
             "JWT_KEY_varejao":"key_teste2"
         }
-    
+
+        
 }
