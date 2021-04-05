@@ -1,4 +1,4 @@
-# mercafacil-rest
+# API-rest
 
 ## Iniciando
 Executar o comando  ```docker-compose up ```  na pasta raiz da aplicação para subir container docker com os servidores Node.js, Mysql, Postgresql.
